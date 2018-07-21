@@ -1,0 +1,315 @@
+$lgray: rgba(137,150,155,0.2);
+
+html, body {
+
+}
+header {
+
+}
+.h1 {
+  
+  line-height: 80px;
+  font-family: 'Roboto-Regular';
+}
+.h2 {
+  font-size: 26px;
+}
+.h3 {
+  font-size: 36px;
+}
+.menu {
+	font-size: 14px;
+
+}
+.menu a {
+  font-size: 14px;
+  transition: ease background-color 300ms;
+}
+.menu a:hover {
+  background-color: $lgray;
+}
+.block-intro {
+  height: 100vh;
+  background-image: url('../i/b-intro.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.b-portfolio {
+  background-image: url('../i/b-portfolio.png');
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.portfolio-back {
+  background-image: url('../i/b-portfolio.png');
+  background-size: cover;
+  background-position: 50% 0;
+}
+.slider {
+
+}
+.slider-item>div {
+  background-color: rgba(255,255,255,0.88);
+  max-width: 380px;
+}
+.btn-theme-cluck {
+  position: relative;
+  background: transparent;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  border: none;
+  border-radius: 100px;
+  padding: 16px 50px;
+  overflow: hidden;
+}
+.btn-theme-cluck:hover {
+  text-decoration: none;
+}
+.btn-theme-cluck span {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  z-index: 2;
+}
+.btn-theme-cluck:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 200%;
+  top: 0;
+  right: 0;
+  transition: 200ms right ease;
+  background: linear-gradient(120deg,#EE7752, #EA546C, #E73C7E, #8B6EA7, #369BCC, #23C6B8);
+}
+.btn-theme-cluck:hover:after {
+  right: -100%;
+}
+footer {
+  background-color: #89969B;
+}
+footer a,footer span,footer ul,footer li {
+  color: #E6E6E6;
+}
+footer a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+footer ul {
+  list-style: none;
+  width: fit-content;
+}
+footer li {
+  display: inline-block;
+}
+footer li a {
+  font-size: 42px;
+  padding: 4px;
+  cursor: pointer;
+}
+footer li a:before {
+  transition: 200ms color ease;
+}
+footer li a:hover:before {
+  color: #E6E6E6;
+}
+.footer-theme-cluck-brand {
+  text-transform: uppercase;
+}
+.footer-theme-cluck-copyright {
+
+}
+.content {
+  min-height: calc(100vh - 157px);
+  padding-top: 70px;
+}
+@media (max-width: 991.98px) { 
+  .content {
+    padding-top: 70px;
+  }
+ }
+ @media (max-width: 768px) { 
+  .content {
+    padding-top: 57px;
+  }
+ }
+
+.content ul, .content li {
+  list-style: none;
+  padding: 0px;
+}
+.content>.container>h2 {
+  font-size: 36px;
+}
+.content h1,a {
+  color: #fff;
+}
+.breadcrumbs-custom a {
+  font-size: 14px;
+  text-decoration: underline;
+  corsor: pointer;
+}
+.breadcrumbs-custom a:hover {
+  color: #E6E6E6;
+}
+.breadcrumbs-custom h1 {
+  font-size: 36px;
+}
+.theme-cluck-back{
+  background: linear-gradient(120deg, #8B6EA7, #369BCC, #23C6B8);
+}
+.p-portfolio .card-item {
+  background-color: rgba(255,255,255,0.88);
+}
+.p-about .list-group {
+  
+}
+.p-about .list-group-item {
+  padding: 15px;
+}
+.p-about .list-group-item img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.p-about .list-group-item .about-card-text{
+  display: inline-block;
+  width: calc(100% - 65px - 15px);
+  vertical-align: middle;
+}
+.p-contacts {
+
+}
+.contacts-socials ul li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+.contacts-socials ul {
+  width: fit-content;
+}
+.icon-gradient {
+  display: block;
+  width: 71px;
+  background: linear-gradient(120deg,#EE7752, #EA546C, #E73C7E, #8B6EA7, #369BCC, #23C6B8);
+  background-size: 142px 71px;
+  background-position: 100% 0;
+  transition: 200ms background-position ease;
+}
+.icon-gradient:hover {
+  background-position: 0 0;
+}
+.icon-gradient img{
+  width: 71px;
+  height: 71px;
+  position: relative;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  h2 { 
+    font-size: 26px !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  h1 {
+    font-size: 70px !important;
+  }
+  h2 {
+    font-size: 36px !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 80px !important;
+  }
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Roboto-Bold.woff') format('woff'), 
+  url('../fonts/Roboto-Bold.ttf')  format('truetype'), 
+  url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Roboto-Regular.woff') format('woff'), 
+  url('../fonts/Roboto-Regular.ttf')  format('truetype'), 
+  url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?whoyem');
+  src:  url('../fonts/icomoon.eot?whoyem#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?whoyem') format('truetype'),
+    url('../fonts/icomoon.woff?whoyem') format('woff'),
+    url('../fonts/icomoon.svg?whoyem#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Facebook:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-Google:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-Group-2:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-Linkedin:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-Twitter:before {
+  content: "\e904";
+  color: #fff;
+}
